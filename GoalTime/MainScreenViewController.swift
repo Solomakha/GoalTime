@@ -12,7 +12,11 @@ class MainScreenViewController: UIViewController {
     weak var coordinator: Coordinator?
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        if let customColor = UIColor(named: "backgroundColor") {
+            view.backgroundColor = customColor
+        } else {
+            view.backgroundColor = UIColor.systemBlue // Fallback color
+        }
         // Do any additional setup after loading the view.
     }
     
