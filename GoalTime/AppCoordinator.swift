@@ -11,9 +11,16 @@ class AppCoordinator: Coordinator {
     }
     
     func start() {
-        let mainVC = MainScreenViewController()
-        mainVC.coordinator = self
-        navigationController.pushViewController(mainVC, animated: true)
+        let mainScreenVC = MainViewController()
+        mainScreenVC.coordinator = self
+        
+        let tabBarCoordinator = TabBarCoordinator(navigationController: navigationController)
+        childCoordinators.append(tabBarCoordinator)
+        tabBarCoordinator.start()
+        
+        mainScreenVC.customTabBarController = tabBarCoordinator.customTabBarController
+        
+        navigationController.pushViewController(mainScreenVC, animated: true)
     }
     
 }

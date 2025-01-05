@@ -15,8 +15,12 @@
 		7CCD8EF72D299F7300D5B543 /* GoalTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD8EF62D299F7300D5B543 /* GoalTimeUITests.swift */; };
 		7CCD8EF92D299F7300D5B543 /* GoalTimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD8EF82D299F7300D5B543 /* GoalTimeUITestsLaunchTests.swift */; };
 		7CCD8F062D29A0D200D5B543 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD8F052D29A0D200D5B543 /* AppCoordinator.swift */; };
-		7CCD8F082D29A23A00D5B543 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD8F072D29A23A00D5B543 /* MainScreenViewController.swift */; };
+		7CCD8F082D29A23A00D5B543 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD8F072D29A23A00D5B543 /* MainViewController.swift */; };
 		7CCD8F0A2D29A27100D5B543 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD8F092D29A27100D5B543 /* Coordinator.swift */; };
+		7CCD8F102D29C87300D5B543 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD8F0F2D29C87300D5B543 /* TabBarCoordinator.swift */; };
+		7CCD8F162D2ABD2700D5B543 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD8F152D2ABD2700D5B543 /* CustomTabBarController.swift */; };
+		7CCD8F182D2ADEB200D5B543 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD8F172D2ADEB200D5B543 /* HomeViewController.swift */; };
+		7CCD8F1A2D2AE7E200D5B543 /* LeaguesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD8F192D2AE7E200D5B543 /* LeaguesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +53,12 @@
 		7CCD8EF62D299F7300D5B543 /* GoalTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTimeUITests.swift; sourceTree = "<group>"; };
 		7CCD8EF82D299F7300D5B543 /* GoalTimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7CCD8F052D29A0D200D5B543 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		7CCD8F072D29A23A00D5B543 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		7CCD8F072D29A23A00D5B543 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7CCD8F092D29A27100D5B543 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		7CCD8F0F2D29C87300D5B543 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		7CCD8F152D2ABD2700D5B543 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		7CCD8F172D2ADEB200D5B543 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7CCD8F192D2AE7E200D5B543 /* LeaguesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +115,12 @@
 				7CCD8EE32D299F7200D5B543 /* Info.plist */,
 				7CCD8EDB2D299F6F00D5B543 /* GoalTime.xcdatamodeld */,
 				7CCD8F052D29A0D200D5B543 /* AppCoordinator.swift */,
-				7CCD8F072D29A23A00D5B543 /* MainScreenViewController.swift */,
+				7CCD8F072D29A23A00D5B543 /* MainViewController.swift */,
 				7CCD8F092D29A27100D5B543 /* Coordinator.swift */,
+				7CCD8F0F2D29C87300D5B543 /* TabBarCoordinator.swift */,
+				7CCD8F152D2ABD2700D5B543 /* CustomTabBarController.swift */,
+				7CCD8F172D2ADEB200D5B543 /* HomeViewController.swift */,
+				7CCD8F192D2AE7E200D5B543 /* LeaguesViewController.swift */,
 			);
 			path = GoalTime;
 			sourceTree = "<group>";
@@ -261,10 +273,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CCD8F062D29A0D200D5B543 /* AppCoordinator.swift in Sources */,
-				7CCD8F082D29A23A00D5B543 /* MainScreenViewController.swift in Sources */,
+				7CCD8F162D2ABD2700D5B543 /* CustomTabBarController.swift in Sources */,
+				7CCD8F082D29A23A00D5B543 /* MainViewController.swift in Sources */,
 				7CCD8F0A2D29A27100D5B543 /* Coordinator.swift in Sources */,
+				7CCD8F182D2ADEB200D5B543 /* HomeViewController.swift in Sources */,
+				7CCD8F102D29C87300D5B543 /* TabBarCoordinator.swift in Sources */,
 				7CCD8ED32D299F6E00D5B543 /* AppDelegate.swift in Sources */,
 				7CCD8EDD2D299F6F00D5B543 /* GoalTime.xcdatamodeld in Sources */,
+				7CCD8F1A2D2AE7E200D5B543 /* LeaguesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
