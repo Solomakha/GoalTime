@@ -14,7 +14,15 @@ class LeaguesViewController: UIViewController {
         let customColor = UIColor(named: "backgroundColor")
         view.backgroundColor = customColor
         
-        // Do any additional setup after loading the view.
+        APIClient.shared.fetchLeagues { result in
+            switch result {
+            case .success(let leagues):
+                print("✅ Список всех лиг:")
+                leagues.forEach { print($0) } // 📌 Выводим каждую лигу в консоль
+            case .failure(let error):
+                print("❌ Ошибка: \(error.localizedDescription)")
+            }
+        }
     }
     
 

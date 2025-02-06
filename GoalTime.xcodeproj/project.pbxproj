@@ -21,6 +21,9 @@
 		7CCD8F162D2ABD2700D5B543 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD8F152D2ABD2700D5B543 /* CustomTabBarController.swift */; };
 		7CCD8F182D2ADEB200D5B543 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD8F172D2ADEB200D5B543 /* HomeViewController.swift */; };
 		7CCD8F1A2D2AE7E200D5B543 /* LeaguesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCD8F192D2AE7E200D5B543 /* LeaguesViewController.swift */; };
+		F8AA08482D55313900B93CF9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA08472D55313900B93CF9 /* APIClient.swift */; };
+		F8AA084A2D55331700B93CF9 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA08492D55331700B93CF9 /* ResponseModel.swift */; };
+		F8FDCAEA2D552E9F000E5E9C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F8FDCAE92D552E9F000E5E9C /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,8 @@
 		7CCD8F152D2ABD2700D5B543 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		7CCD8F172D2ADEB200D5B543 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7CCD8F192D2AE7E200D5B543 /* LeaguesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewController.swift; sourceTree = "<group>"; };
+		F8AA08472D55313900B93CF9 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F8AA08492D55331700B93CF9 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8FDCAEA2D552E9F000E5E9C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +127,8 @@
 				7CCD8F152D2ABD2700D5B543 /* CustomTabBarController.swift */,
 				7CCD8F172D2ADEB200D5B543 /* HomeViewController.swift */,
 				7CCD8F192D2AE7E200D5B543 /* LeaguesViewController.swift */,
+				F8AA08472D55313900B93CF9 /* APIClient.swift */,
+				F8AA08492D55331700B93CF9 /* ResponseModel.swift */,
 			);
 			path = GoalTime;
 			sourceTree = "<group>";
@@ -158,6 +166,9 @@
 			dependencies = (
 			);
 			name = GoalTime;
+			packageProductDependencies = (
+				F8FDCAE92D552E9F000E5E9C /* Alamofire */,
+			);
 			productName = GoalTime;
 			productReference = 7CCD8ECF2D299F6E00D5B543 /* GoalTime.app */;
 			productType = "com.apple.product-type.application";
@@ -230,6 +241,9 @@
 				Base,
 			);
 			mainGroup = 7CCD8EC62D299F6E00D5B543;
+			packageReferences = (
+				F8FDCAE82D552E9F000E5E9C /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 7CCD8ED02D299F6E00D5B543 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -276,9 +290,11 @@
 				7CCD8F162D2ABD2700D5B543 /* CustomTabBarController.swift in Sources */,
 				7CCD8F082D29A23A00D5B543 /* MainViewController.swift in Sources */,
 				7CCD8F0A2D29A27100D5B543 /* Coordinator.swift in Sources */,
+				F8AA08482D55313900B93CF9 /* APIClient.swift in Sources */,
 				7CCD8F182D2ADEB200D5B543 /* HomeViewController.swift in Sources */,
 				7CCD8F102D29C87300D5B543 /* TabBarCoordinator.swift in Sources */,
 				7CCD8ED32D299F6E00D5B543 /* AppDelegate.swift in Sources */,
+				F8AA084A2D55331700B93CF9 /* ResponseModel.swift in Sources */,
 				7CCD8EDD2D299F6F00D5B543 /* GoalTime.xcdatamodeld in Sources */,
 				7CCD8F1A2D2AE7E200D5B543 /* LeaguesViewController.swift in Sources */,
 			);
@@ -627,6 +643,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8FDCAE82D552E9F000E5E9C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8FDCAE92D552E9F000E5E9C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8FDCAE82D552E9F000E5E9C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		7CCD8EDB2D299F6F00D5B543 /* GoalTime.xcdatamodeld */ = {
