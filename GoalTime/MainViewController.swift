@@ -15,8 +15,8 @@ class MainViewController: UIViewController {
     }
     
     func setupView(){
-        let customColor = UIColor(named: "backgroundColor")
-        view.backgroundColor = customColor
+        let customBackgroundColor = UIColor(named: "backgroundColor")
+        view.backgroundColor = customBackgroundColor
         
         view.addSubview(tabBarView)
         tabBarView.backgroundColor = .quaternarySystemFill
